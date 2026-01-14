@@ -1,0 +1,13 @@
+<div class="book-details" *ngIf="book">
+  <h1>{{ book.title }}</h1>
+
+  <h2 *ngIf="book.subtitle">{{ book.subtitle }}</h2>
+
+  <p class="year">
+    <strong>First published:</strong> {{ book.first_publish_year }}
+  </p>
+
+  <p class="description" *ngIf="book.description">
+    {{ book.description }}
+  </p>
+</div>

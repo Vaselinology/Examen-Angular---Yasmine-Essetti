@@ -1,0 +1,15 @@
+<div class="search-bar">
+  <input
+    type="text"
+    placeholder="Rechercher par titre"
+    [(ngModel)]="title"
+  />
+
+  <input
+    type="number"
+    placeholder="Année de première édition"
+    [(ngModel)]="year"
+  />
+
+  <button (click)="onSearch()">Rechercher</button>
+</div>

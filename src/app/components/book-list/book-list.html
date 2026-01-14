@@ -1,0 +1,10 @@
+<div class="books">
+  <div
+    class="book-card"
+    *ngFor="let book of booksList"
+    (click)="goToDetails(book.key.split('/').pop())"
+  >
+    <img *ngIf="book.cover_id" [src]="'https://covers.openlibrary.org/b/id/' + book.cover_id + '-M.jpg'" />
+    <h3>{{ book.title }}</h3>
+  </div>
+</div>
